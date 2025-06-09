@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Banner con nombre arriba y logo debajo */
+  .banner {
+    background-image: url("../images/background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 100%;
+    min-height: 310px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .nombre-sitio {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .logo {
+    height: auto;
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Menú de navegación horizontal */
+  nav {
+    background-color: #333;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.5rem 0;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  
+  .menu li a:hover {
+    color: #00aced;
+    border-bottom: 2px solid #00aced;
+  }
+
+  .menu li a.active {
+  color: #ffc400;
+  border-bottom: 3px solid #00aced;
+  font-weight: bold;
+}
+  
+  footer {
+  background-color: #333;       /* Fondo oscuro */
+  color: #fff;                  /* Texto blanco */
+  text-align: center;           /* Texto centrado */
+  padding: 1.5rem 1rem;         /* Espaciado vertical y horizontal */
+  font-size: 0.9rem;            /* Tamaño de letra */
+  border-top: 1px solid #555;   /* Línea sutil arriba */
+}
+
+footer a {
+  color: #00aced;               /* Color links */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #1da1f2;               /* Color al pasar el mouse */
+}
+
+footer .telefono {
+  font-family: monospace;
+  font-weight: bold;
+  display: inline-flex; /* Para alinear los spans en línea y usar gap */
+  gap: 3px;             /* Espacio solo entre los spans */
+  letter-spacing: 0;
+}
+
+
+@media (max-width: 767px) {
+  /* Ajustar el banner para que sea más bajo y texto centrado si agregas texto o logo */
+  .banner {
+    min-height: 180px;
+    padding: 1rem;
+    background-position: center top;
+  }
+
+  /* Menú vertical en móvil */
+  nav {
+    background-color: #333;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .menu li {
+    text-align: center;
+  }
+  
+}

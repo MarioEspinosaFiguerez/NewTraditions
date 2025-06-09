@@ -1,0 +1,73 @@
+.about_us_with_image {
+  display: flex;
+  flex-direction: column; /* Esto pone el contenido en columna: texto arriba, imagen abajo */
+  padding: 2rem;
+  margin: 0 auto;
+  color: white;
+  background-image: url(../images/background-index.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+
+.about_us {
+  max-width: 700px;      /* Limita ancho para mejor lectura */
+  margin: 2rem auto;     /* Centra sección horizontalmente con margen arriba y abajo */
+  text-align: center;    /* Centra el texto y demás elementos */
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+
+aside {
+  flex: 1 1 40%;        /* El resto del espacio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+  /* Ajustar el contenido principal */
+  .content-wrapper {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  /* El texto y la imagen deben ocupar toda la anchura */
+  .about_infrastructure_wrapper {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .about_infrastructure {
+    padding-left: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  aside {
+    flex: none;
+    width: 100%;
+  }
+
+  aside img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Footer centrado y con mejor padding */
+  footer {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}

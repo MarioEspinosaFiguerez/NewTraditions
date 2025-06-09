@@ -1,0 +1,8 @@
+.menu-bg {
+    display: block;
+    margin: 0;         /* Sin márgenes arriba ni abajo */
+    width: 100%;       /* Ocupa todo el ancho */
+    height: auto;      /* Mantiene proporción */
+    border-radius: 0;  /* Opcional: quita bordes redondeados si quieres */
+    box-shadow: none;  /* Opcional: quita sombra si no quieres */
+}
